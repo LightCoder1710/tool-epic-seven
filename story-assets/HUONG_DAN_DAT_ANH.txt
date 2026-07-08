@@ -1,0 +1,64 @@
+# Story Assets - Huong Dan Dat Anh (Image Guide)
+# ================================================
+#
+# Cac anh da duoc chup va dat trong thu muc nay.
+# Tool se doc cac file theo dung ten ben duoi.
+#
+# ==================================================================================
+#  FILE NAME              | MO TA (Description)                    | BUOC
+# ==================================================================================
+#  1.png                  | Nut READY o sanh chinh                 | Step 1
+#                         | -> Nut xanh la "Ready" voi icon kiem
+# ----------------------------------------------------------------------------------
+#  2.png                  | Nut SELECT TEAM                        | Step 2
+#                         | -> Nut xanh la "Select Team >"
+# ----------------------------------------------------------------------------------
+#  3.png                  | Nut START QUEST                        | Step 3
+#                         | -> Nut "Start Quest" voi so energy
+# ----------------------------------------------------------------------------------
+#  skip.png               | Nut SKIP tren cutscene                 | Step 4 (lap)
+#                         | -> Nut "Skip >" o goc tren phai
+# ----------------------------------------------------------------------------------
+#  cofirmskip.png         | Nut CONFIRM SKIP                       | Step 4 (lap)
+#                         | -> Nut "Confirm" xanh tren popup skip
+# ----------------------------------------------------------------------------------
+#  clearstage.png         | Man hinh CLEAR STAGE                   | Step 5
+#                         | -> Man hinh "CLEAR" sau khi thang tran
+#                         | -> Day la anh TOAN MAN HINH (de detect)
+#                         | -> Khi thay man hinh nay, tool tap center
+# ----------------------------------------------------------------------------------
+#  tap.png                | "Tap to close."                        | Step 6, 9
+#                         | -> Xuat hien sau clear va sau confirm
+# ----------------------------------------------------------------------------------
+#  cancelfriendreq.png    | Nut CANCEL friend request              | Step 7
+#                         | -> Nut vang "Cancel" tu choi ket ban
+# ----------------------------------------------------------------------------------
+#  endbattle.png          | Nut CONFIRM ket thuc tran              | Step 8
+#                         | -> Nut xanh la "Confirm >" de thoat
+# ==================================================================================
+#
+# WORKFLOW (1 chu ki):
+#
+#  [Sanh chinh]
+#     |
+#     v
+#  1.png (Ready) --> 2.png (Select Team) --> 3.png (Start Quest)
+#     |
+#     v
+#  skip.png + cofirmskip.png  (lap nhieu lan cho den khi thang)
+#     |
+#     v
+#  clearstage.png (tap anywhere)
+#     |
+#     v
+#  tap.png (tap to close) --> cancelfriendreq.png (cancel) --> endbattle.png (confirm)
+#     |
+#     v
+#  tap.png (tap to close)
+#     |
+#     v
+#  [Quay lai sanh chinh - bat dau chu ki moi]
+#
+# CACH CHAY:
+#   python E7StoryAutoProgress.py
+#   (Bam ESC de dung bat cu luc nao)
